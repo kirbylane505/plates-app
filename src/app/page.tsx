@@ -74,6 +74,181 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW IT WORKS - Infomercial Style */}
+      <section className="py-16 px-4 bg-[#030712] border-y border-[#1e3a5f]">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <p className="text-[#d4af37] text-sm font-bold tracking-widest mb-2">✨ HOW IT WORKS ✨</p>
+            <h2 className="text-4xl md:text-5xl font-black mb-4">
+              From <span className="text-red-500">Hungry</span> to <span className="text-[#22c55e]">Happy</span> in 3 Steps
+            </h2>
+          </div>
+
+          {/* The Problem - Crossed Out */}
+          <div className="mb-12 p-6 bg-red-950/30 rounded-2xl border border-red-900/50">
+            <h3 className="text-red-400 text-xl font-bold mb-4 flex items-center gap-2">
+              <span className="text-2xl">😫</span> TIRED OF THIS?
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="flex items-center gap-3 text-gray-400 line-through opacity-60">
+                <span className="text-3xl">🍔</span>
+                <span>Same boring fast food</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-400 line-through opacity-60">
+                <span className="text-3xl">💸</span>
+                <span>$50+ restaurant bills</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-400 line-through opacity-60">
+                <span className="text-3xl">😔</span>
+                <span>No homemade flavor</span>
+              </div>
+            </div>
+          </div>
+
+          {/* The Solution - PLATES */}
+          <div className="mb-12 p-6 bg-[#d4af37]/10 rounded-2xl border-2 border-[#d4af37]">
+            <h3 className="text-[#d4af37] text-xl font-bold mb-4 flex items-center gap-2">
+              <span className="text-2xl">🎉</span> INTRODUCING PLATES!
+            </h3>
+            <p className="text-xl text-white">Real homemade food from neighbors who love to cook. <span className="text-[#d4af37] font-bold">Starting at just $10.</span></p>
+          </div>
+
+          {/* 3 Steps Visual */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Step 1 */}
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#d4af37] rounded-full flex items-center justify-center text-black text-2xl font-black">1</div>
+              <div className="bg-[#0f172a] rounded-2xl p-6 border border-[#1e3a5f] h-full">
+                <div className="text-6xl mb-4 text-center">📱</div>
+                <h4 className="text-xl font-bold text-[#d4af37] mb-2">Open PLATES</h4>
+                <p className="text-gray-400">See who&apos;s cooking in your neighborhood right now. Live kitchen status updates.</p>
+                <div className="mt-4 p-3 bg-[#030712] rounded-lg text-center">
+                  <span className="text-[#22c55e] text-sm font-bold">● 4 Kitchens Active Near You</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#d4af37] rounded-full flex items-center justify-center text-black text-2xl font-black">2</div>
+              <div className="bg-[#0f172a] rounded-2xl p-6 border border-[#1e3a5f] h-full">
+                <div className="text-6xl mb-4 text-center">🍽️</div>
+                <h4 className="text-xl font-bold text-[#d4af37] mb-2">Pick Your Plate</h4>
+                <p className="text-gray-400">Browse menus, see ratings, check certifications. Order with one tap.</p>
+                <div className="mt-4 p-3 bg-[#030712] rounded-lg">
+                  <div className="flex justify-between items-center">
+                    <span className="text-white text-sm">🌮 Ms. Rosa&apos;s Tacos</span>
+                    <span className="text-[#d4af37] font-bold">$10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#d4af37] rounded-full flex items-center justify-center text-black text-2xl font-black">3</div>
+              <div className="bg-[#0f172a] rounded-2xl p-6 border border-[#1e3a5f] h-full">
+                <div className="text-6xl mb-4 text-center">😋</div>
+                <h4 className="text-xl font-bold text-[#d4af37] mb-2">Enjoy!</h4>
+                <p className="text-gray-400">Pick up fresh from their kitchen or get it delivered. Taste the love!</p>
+                <div className="mt-4 p-3 bg-[#22c55e]/20 rounded-lg text-center border border-[#22c55e]/50">
+                  <span className="text-[#22c55e] text-sm font-bold">✓ Order Ready in 15 min!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Live Example Scenario */}
+          <div className="bg-gradient-to-r from-[#1e3a5f] to-[#0f172a] rounded-2xl p-8 border border-[#d4af37]/30">
+            <h3 className="text-center text-[#d4af37] text-sm font-bold tracking-widest mb-6">📺 SEE IT IN ACTION</h3>
+
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              {/* Customer */}
+              <div className="text-center flex-1">
+                <div className="w-20 h-20 mx-auto bg-[#0f172a] rounded-full flex items-center justify-center text-4xl border-2 border-[#60a5fa] mb-3">
+                  👩🏽
+                </div>
+                <p className="font-bold text-white">Sarah</p>
+                <p className="text-gray-400 text-sm">Hungry in Atlanta</p>
+                <div className="mt-3 bg-[#0f172a] rounded-lg p-3 text-left">
+                  <p className="text-sm text-gray-300">&quot;I want real tacos, not Taco Bell...&quot;</p>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="text-4xl text-[#d4af37] animate-pulse">
+                ⚡
+              </div>
+
+              {/* PLATES App */}
+              <div className="text-center flex-1">
+                <div className="w-20 h-20 mx-auto bg-[#d4af37] rounded-2xl flex items-center justify-center text-3xl mb-3">
+                  📱
+                </div>
+                <p className="font-bold text-[#d4af37]">PLATES</p>
+                <p className="text-gray-400 text-sm">Finds Ms. Rosa nearby</p>
+                <div className="mt-3 bg-[#0f172a] rounded-lg p-3">
+                  <p className="text-sm text-[#22c55e]">● Ms. Rosa is COOKING NOW</p>
+                  <p className="text-xs text-gray-400">0.3 miles away • 4.9 ⭐</p>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="text-4xl text-[#d4af37] animate-pulse">
+                ⚡
+              </div>
+
+              {/* Cook */}
+              <div className="text-center flex-1">
+                <div className="w-20 h-20 mx-auto bg-[#0f172a] rounded-full flex items-center justify-center text-4xl border-2 border-[#d4af37] mb-3">
+                  👩🏽‍🍳
+                </div>
+                <p className="font-bold text-white">Ms. Rosa</p>
+                <p className="text-gray-400 text-sm">💎 Diamond Chef</p>
+                <div className="mt-3 bg-[#0f172a] rounded-lg p-3 text-left">
+                  <p className="text-sm text-gray-300">&quot;Order up! Fresh street tacos!&quot;</p>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="text-4xl text-[#22c55e]">
+                →
+              </div>
+
+              {/* Result */}
+              <div className="text-center flex-1">
+                <div className="w-20 h-20 mx-auto bg-[#22c55e]/20 rounded-full flex items-center justify-center text-4xl border-2 border-[#22c55e] mb-3">
+                  🌮
+                </div>
+                <p className="font-bold text-[#22c55e]">$10 TACOS!</p>
+                <p className="text-gray-400 text-sm">Authentic & Homemade</p>
+                <div className="mt-3 bg-[#22c55e]/10 rounded-lg p-3 border border-[#22c55e]/30">
+                  <p className="text-sm text-[#22c55e] font-bold">Sarah: &quot;OMG these are amazing!&quot; ⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Stats */}
+            <div className="mt-8 pt-6 border-t border-[#1e3a5f] grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-3xl font-black text-[#d4af37]">15 min</p>
+                <p className="text-gray-400 text-sm">From order to eat</p>
+              </div>
+              <div>
+                <p className="text-3xl font-black text-[#22c55e]">$10</p>
+                <p className="text-gray-400 text-sm">Fresh authentic tacos</p>
+              </div>
+              <div>
+                <p className="text-3xl font-black text-white">0.3 mi</p>
+                <p className="text-gray-400 text-sm">From her kitchen</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Live Map Section */}
       <section className="py-12 px-4 bg-[#0f172a]">
         <div className="max-w-7xl mx-auto">
