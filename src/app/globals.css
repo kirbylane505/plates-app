@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  /* NAVY BLUE & GOLD THEME */
+  --plates-navy: #0f172a;
+  --plates-navy-light: #1e3a5f;
+  --plates-gold: #d4af37;
+  --plates-gold-light: #f4d03f;
+  --plates-green: #22c55e;
+  --plates-diamond: #60a5fa;
+  --plates-platinum: #e5e4e2;
+  --plates-dark: #030712;
+  --plates-card: #0f172a;
+  --background: #030712;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--plates-dark);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cooking Now Pulse Animation */
+@keyframes cookingPulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+.cooking-now {
+  animation: cookingPulse 2s infinite;
+}
+
+/* Diamond Glow */
+@keyframes diamondGlow {
+  0% { box-shadow: 0 0 5px var(--plates-diamond); }
+  50% { box-shadow: 0 0 20px var(--plates-diamond); }
+  100% { box-shadow: 0 0 5px var(--plates-diamond); }
+}
+
+.diamond-glow {
+  animation: diamondGlow 2s ease-in-out infinite;
+}
+
+/* Gold Glow */
+@keyframes goldGlow {
+  0% { box-shadow: 0 0 5px var(--plates-gold); }
+  50% { box-shadow: 0 0 20px var(--plates-gold); }
+  100% { box-shadow: 0 0 5px var(--plates-gold); }
+}
+
+.gold-glow {
+  animation: goldGlow 2s ease-in-out infinite;
+}
+
+/* Platinum Glow */
+.platinum-glow {
+  box-shadow: 0 0 15px rgba(229, 228, 226, 0.5);
+}
+
+/* Price Tags */
+.price-tag {
+  background: linear-gradient(135deg, var(--plates-gold), var(--plates-gold-light));
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Card Hover Effects */
+.chef-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chef-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--plates-gold), var(--plates-gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Map Pin Styles */
+.map-pin {
+  background: var(--plates-navy-light);
+  border: 1px solid var(--plates-gold);
+  color: var(--plates-gold);
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.map-pin.diamond {
+  background: linear-gradient(135deg, var(--plates-diamond), #3b82f6);
+  border: none;
+  color: white;
+}
+
+.map-pin.platinum {
+  background: linear-gradient(135deg, var(--plates-platinum), #c0c0c0);
+  border: none;
+  color: #000;
+}
+
+/* Tier Badges */
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tier-badge.home_cook { background: #1e293b; color: #94a3b8; }
+.tier-badge.rising { background: #1e3a5f; color: var(--plates-gold); }
+.tier-badge.gold { background: #422006; color: var(--plates-gold); border: 1px solid var(--plates-gold); }
+.tier-badge.diamond { background: #1e3a8a; color: var(--plates-diamond); border: 1px solid var(--plates-diamond); }
+.tier-badge.platinum { background: #374151; color: var(--plates-platinum); border: 1px solid var(--plates-platinum); }
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--plates-gold), var(--plates-gold-light));
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+  background: var(--plates-navy);
+  color: var(--plates-gold);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--plates-gold);
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: var(--plates-gold);
+  color: #000;
+}
